@@ -10,6 +10,7 @@ export default async function Home() {
 
   const {userId} = await auth();
   const isAuth = !!userId;
+  //when not authenticated we will get a null but when authenticated we will get a string so it will be true.
 
 
   return ( 

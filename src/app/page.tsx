@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from 'next/link';
 
 import {LogIn} from 'lucide-react';
+import FileUpload from "@/components/FileUpload";
 
 
 export default async function Home() {
@@ -33,7 +34,7 @@ export default async function Home() {
 
               <div className="w-full mt-4">
                 {isAuth ? (
-                <h1>fileupload</h1>
+                <FileUpload/>
                 ): (
                   <Link href="/sign-in">
                     <Button>
